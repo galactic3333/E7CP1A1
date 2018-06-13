@@ -11,3 +11,7 @@ h.each { |key, _value| puts 'yeeah' if key == :z }
 j = h.invert
 
 print j
+
+k = {}
+h.each { |key, value| k[value] = key }
+print k
